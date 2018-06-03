@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "com.sixbynine.dialerforwarder.rules";
+import "rule.proto";
+
+
+message Rules {
+    repeated Rule rules = 1;
+}

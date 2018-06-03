@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.sixbynine.dialerforwarder">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:name=".app.DialerApplication"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+                android:label="@string/app_name"
+                android:name=".LaunchActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:label="@string/call"
+                android:name=".intenthandler.DialIntentHandlerActivity"
+                android:launchMode="singleInstance"
+                android:theme="@style/AppTheme.NoActionBar.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tel"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tel"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:label="@string/title_activity_host"
+                android:name=".MainActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <service
+                android:name=".intenthandler.CleanUpStoredCallsJobService"
+                android:label="Clean up service"
+                android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

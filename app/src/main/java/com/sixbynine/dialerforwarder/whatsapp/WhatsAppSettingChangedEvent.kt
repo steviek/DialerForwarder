@@ -1,0 +1,3 @@
+package com.sixbynine.dialerforwarder.whatsapp
+
+class WhatsAppSettingChangedEvent

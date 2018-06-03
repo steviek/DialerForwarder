@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2018 Steven Kideckel
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+<notices>
+    <notice>
+        <name>Android Compatibility Support Library</name>
+        <url>https://developer.android.com/topic/libraries/support-library//</url>
+        <copyright>Copyright (C) 2011 The Android Open Source Project</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Android Contacts API</name>
+        <url>https://github.com/tamir7/Contacts/</url>
+        <copyright>Copyright (C) 2016 Tamir Shomer</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Auto Factory</name>
+        <url>https://github.com/google/auto/tree/master/factory</url>
+        <copyright>Copyright 2013 Google, Inc.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>CircleImageView</name>
+        <url>https://github.com/hdodenhof/CircleImageView</url>
+        <copyright>Copyright 2014 - 2018 Henning Dodenhof</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Dagger</name>
+        <url>https://google.github.io/dagger/</url>
+        <copyright>Copyright 2012 The Dagger Authors</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Google Guava</name>
+        <url>http://code.google.com/p/guava-libraries/</url>
+        <copyright>Copyright (C) 2007 The Guava Authors</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>LicensesDialog</name>
+        <url>http://psdev.de/LicensesDialog</url>
+        <copyright>Copyright 2013-2017 Philip Schiffer</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Picasso</name>
+        <url>https://github.com/square/picasso/</url>
+        <copyright>Copyright 2013 Square, Inc.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Text Drawable</name>
+        <url>https://github.com/amulyakhare/TextDrawable</url>
+        <copyright>Copyright (c) 2014 Amulya Khare</copyright>
+        <license>MIT License</license>
+    </notice>
+    <notice>
+        <name>libphonenumber-android</name>
+        <url>https://github.com/MichaelRocks/libphonenumber-android</url>
+        <copyright>Copyright (C) 2017 Michael Rozumyanskiy</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+</notices>

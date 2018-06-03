@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "com.sixbynine.dialerforwarder";
+
+message DialerAppInfoProto {
+    string dial_package_name = 1;
+    string dial_class_name = 2;
+    string call_package_name = 3;
+    string call_class_name = 4;
+    bool whats_app = 5;
+}

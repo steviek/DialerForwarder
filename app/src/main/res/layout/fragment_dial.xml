@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/numberEditText"
+        android:inputType="textNoSuggestions"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backspaceButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_backspace"
+        android:background="?selectableItemBackgroundBorderless"
+        android:contentDescription="@string/backspace"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/numberEditText"
+        app:layout_constraintBottom_toBottomOf="@+id/numberEditText"/>
+
+    <Button
+        style="@style/DialButton.Number"
+        android:id="@+id/dialButton1"
+        android:text="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/dialButton2"
+        app:layout_constraintTop_toBottomOf="@+id/numberEditText"/>
+
+    <Button
+        style="@style/DialButton.Number"
+        android:id="@+id/dialButton2"
+        android:text="2"
+        app:layout_constraintLeft_toRightOf="@+id/dialButton1"
+        app:layout_constraintRight_toLeftOf="@+id/dialButton3"
+        app:layout_constraintTop_toBottomOf="@+id/numberEditText"/>
+
+    <Button
+        style="@style/DialButton.Number"
+        android:id="@+id/dialButton3"
+        android:text="3"
+        app:layout_constraintLeft_toRightOf="@+id/dialButton2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberEditText"/>
+
+    <Button
+        style="@style/DialButton.Number"
+        android:id="@+id/dialButton4"
+        android:text="4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/dialButton5"
+        app:layout_constraintTop_toBottomOf="@+id/dialButton1"/>
+
+    <Button
+        style="@style/DialButton.Number"
+        android:id="@+id/dialButton5"
+        android:text="5"
+        app:layout_constraintLeft_toRightOf="@+id/dialButton4"
+        app:layout_constraintRight_toLeftOf="@+id/dialButton6"
+        app:layout_constraintTop_toBottomOf="@+id/dialButton1"/>
+
+    <Button
+        style="@style/DialButton.Number"
+        android:id="@+id/dialButton6"
+        android:text="6"
+        app:layout_constraintLeft_toRightOf="@+id/dialButton5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialButton1"/>
+
+    <Button
+        style="@style/DialButton.Number"
+        android:id="@+id/dialButton7"
+        android:text="7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/dialButton8"
+        app:layout_constraintTop_toBottomOf="@+id/dialButton4"/>
+
+    <Button
+        style="@style/DialButton.Number"
+        android:id="@+id/dialButton8"
+        android:text="8"
+        app:layout_constraintLeft_toRightOf="@+id/dialButton7"
+        app:layout_constraintRight_toLeftOf="@+id/dialButton9"
+        app:layout_constraintTop_toBottomOf="@+id/dialButton4"/>
+
+    <Button
+        style="@style/DialButton.Number"
+        android:id="@+id/dialButton9"
+        android:text="9"
+        app:layout_constraintLeft_toRightOf="@+id/dialButton8"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialButton4"/>
+
+    <Button
+        style="@style/DialButton"
+        android:id="@+id/dialButtonStar"
+        android:text="*"
+        android:textColor="@color/textSecondary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/dialButton0"
+        app:layout_constraintTop_toBottomOf="@+id/dialButton8"/>
+
+    <Button
+        style="@style/DialButton.Number"
+        android:id="@+id/dialButton0"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@+id/dialButtonStar"
+        app:layout_constraintRight_toLeftOf="@+id/dialButtonNumber"
+        app:layout_constraintTop_toBottomOf="@+id/dialButton8"/>
+
+    <Button
+        style="@style/DialButton"
+        android:id="@+id/dialButtonNumber"
+        android:text="#"
+        android:textColor="@color/textSecondary"
+        app:layout_constraintLeft_toRightOf="@+id/dialButton0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialButton8"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/dialButton2"
+        app:layout_constraintRight_toRightOf="@id/dialButton2"
+        app:layout_constraintBottom_toBottomOf="@id/dialButton2"
+        android:text="ABC"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/dialButton3"
+        app:layout_constraintRight_toRightOf="@id/dialButton3"
+        app:layout_constraintBottom_toBottomOf="@id/dialButton3"
+        android:text="DEF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/dialButton4"
+        app:layout_constraintRight_toRightOf="@id/dialButton4"
+        app:layout_constraintBottom_toBottomOf="@id/dialButton4"
+        android:text="GHI"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/dialButton5"
+        app:layout_constraintRight_toRightOf="@id/dialButton5"
+        app:layout_constraintBottom_toBottomOf="@id/dialButton5"
+        android:text="JKL"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/dialButton6"
+        app:layout_constraintRight_toRightOf="@id/dialButton6"
+        app:layout_constraintBottom_toBottomOf="@id/dialButton6"
+        android:text="MNO"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/dialButton7"
+        app:layout_constraintRight_toRightOf="@id/dialButton7"
+        app:layout_constraintBottom_toBottomOf="@id/dialButton7"
+        android:text="PQRS"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/dialButton8"
+        app:layout_constraintRight_toRightOf="@id/dialButton8"
+        app:layout_constraintBottom_toBottomOf="@id/dialButton8"
+        android:text="TUV"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/dialButton9"
+        app:layout_constraintRight_toRightOf="@id/dialButton9"
+        app:layout_constraintBottom_toBottomOf="@id/dialButton9"
+        android:text="WXYZ"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/dialButton0"
+        app:layout_constraintRight_toRightOf="@id/dialButton0"
+        app:layout_constraintBottom_toBottomOf="@id/dialButton0"
+        android:text="+"/>
+
+    <ImageButton
+        android:id="@+id/callButton"
+        android:contentDescription="@string/call"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialButton0"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

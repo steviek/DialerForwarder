@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "com.sixbynine.dialerforwarder.rules";
+
+import "dialer_app_info_proto.proto";
+
+message CountryRule {
+    bool negated = 1;
+    int32 operator = 2;
+    repeated string countries = 3;
+    DialerAppInfoProto dialer_app_info = 4;
+}

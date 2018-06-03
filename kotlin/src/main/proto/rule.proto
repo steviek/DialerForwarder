@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "com.sixbynine.dialerforwarder.rules";
+import "contact_rule.proto";
+import "country_rule.proto";
+
+
+message Rule {
+    int32 type = 1;
+    CountryRule countryRuleProto = 2;
+    ContactRule contactRuleProto = 3;
+}

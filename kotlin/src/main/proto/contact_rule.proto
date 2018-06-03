@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "com.sixbynine.dialerforwarder.rules";
+
+import "dialer_app_info_proto.proto";
+
+message ContactRule {
+    int64 contact_id = 1;
+    DialerAppInfoProto dialer_app_info = 2;
+}
